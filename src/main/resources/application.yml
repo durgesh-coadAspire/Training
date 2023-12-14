@@ -1,0 +1,31 @@
+jwt:
+  token:
+    secret: ${JWT_SECRET}
+    validity: ${JWT_TOKEN_VALIDITY}
+
+auth:
+  ignoreUrl: ${IGNORE_URL}
+
+spring:
+  profiles:
+    active: local
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    username: ${DB_USERNAME}
+    url: ${DB_URL}
+    password: ${DB_PASSWORD}
+  jpa:
+    hibernate.ddl-auto: update
+    generate-ddl: true
+    show-sql: false
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL8Dialect
+  data:
+    rest:
+      base-path: ${REST_URI}
+
+
+spring-doc:
+  swagger-ui:
+    path: /swagger-ui-custom.html

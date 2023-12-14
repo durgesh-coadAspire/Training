@@ -1,0 +1,8 @@
+DB_USERNAME: root
+DB_URL: jdbc:mysql://localhost:3306/training
+DB_PASSWORD: root
+REST_URI: /api
+JWT_SECRET: codespice
+IGNORE_URL: /**,/swagger-ui/**,/v3/api-docs/**
+JWT_TOKEN_VALIDITY: 18000
+#http://localhost:8080/swagger-ui-custom.html For Swagger

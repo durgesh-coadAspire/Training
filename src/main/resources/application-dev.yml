@@ -1,0 +1,7 @@
+DB_USERNAME: dev_prism
+DB_URL: jdbc:mysql://dev-prism.ck44ti46hphd.us-east-1.rds.amazonaws.com:3306/training
+DB_PASSWORD: Human321**
+REST_URI: /api
+JWT_SECRET: codespice
+IGNORE_URL: /members,/authenticate,/swagger-ui/**,/swagger-ui-custom.html,/v3/api-docs/**,/actuator/health
+JWT_TOKEN_VALIDITY: 18000
